@@ -1,3 +1,23 @@
+// Escribiendo 
+
+const texto = document.querySelector(".sec-texto");
+
+const escribiendo = () => {
+    setTimeout(() => {
+        texto.textContent = "Proyecto"
+    }, 0);
+    setTimeout(() => {
+        texto.textContent = "Escolar"
+    }, 5000);
+    setTimeout(() => {
+        texto.textContent = "Ambiental"
+    }, 10000);
+}
+
+escribiendo();
+setInterval
+(escribiendo, 15000);
+
 (function ($) {
     "use strict";
     
@@ -43,4 +63,3 @@
     });
     
 })(jQuery);
-
