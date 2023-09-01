@@ -1,0 +1,38 @@
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.navbar .container,
+.navbar .container-fluid, .navbar .container-sm, .navbar .container-md, .navbar .container-lg, .navbar .container-xl {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.d-none {
+  display: none !important;
+}
+
+@media (min-width: 992px) {
+  .d-lg-block {
+    display: block;
+  }
+}
+
+.align-items-center {
+  align-items: center !important;
+}
+
+.pt-4,
+.py-4 {
+  padding-top: 1,5 rem !important;
+}
+
+.pb-4,
+.py-4 {
+  padding-bottom: 1.5rem !important;
+}
