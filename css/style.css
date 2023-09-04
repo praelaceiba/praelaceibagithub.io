@@ -9959,28 +9959,15 @@ h6,
 
 /*Efecto de escribiendo*/
 
-.sec-texto::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  font-size: 1px;
-  border-left: 2px solid #28a745;
-  animation: animate 5s steps(12) infinite;
+
+
+.linea {
+  border-right: 3px solid #28a745;
+  animation: parpadeo 1s infinite;
 }
 
-@keyframes animate {   
-  40%, 60% {
-      left: calc(100% + 4px);
-  }
-  100% {
-      left: 0%;
-  }
+@keyframes parpadeo {
+  0% { border-right-color: transparent; }
+  50% { border-right-color: #28a745; }
+  100% { border-right-color: transparent; }
 }
-
-.container-text {
-  position: relative;
-}
-
